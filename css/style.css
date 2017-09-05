@@ -108,6 +108,7 @@ header{
   background-image: url('../gallery/index.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -353,6 +354,7 @@ header{
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
+     background-attachment: fixed;
      width:100%;
      height: 100%;
      display: flex;
@@ -414,6 +416,7 @@ header{
      height: 100%;
      position: relative;
      bottom: 20%;
+     z-index: 1;
      display: flex;
      flex-wrap: wrap;
      background-color: whitesmoke;
@@ -483,7 +486,7 @@ header{
      }
  }
  .photo{
-     width: 76%;
+     width: 50%;
      height: 100%;
      background-size: cover;
      background-repeat: no-repeat;
@@ -513,3 +516,15 @@ header{
      background-image: url("../gallery/photo4.jpg");
  }
 
+.banner2{
+    background-image: url("../gallery/jennifer-pallian-200439.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    bottom: 20%;
+    overflow: hidden;
+}

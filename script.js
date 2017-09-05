@@ -12,7 +12,7 @@ function closeMenu() {
 // animation on scroll
 function onScroll() {
     let distance = window.pageYOffset;
-    let target = 300;
+    let target = 150;
 
     if (distance > target){
         document.querySelector(".container").style.opacity = "1";
