@@ -150,6 +150,8 @@ header{
 /*page2*/
 
  .container{
+     opacity: 0;
+     transition: 0.3s;
    width: 100%;
    height: 80vh;
    display: flex;
@@ -325,14 +327,27 @@ header{
  .banner{
    width: 100%;
    height: 50vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-image: url("../gallery/olenka-kotyk-15382.jpg");
-   background-size: cover;
-   background-position: center;
    position: relative;
-   bottom: 10%;
+   bottom: 9%;
+   overflow: hidden;
+ }
+
+ .banner-child{
+     background-image: url("../gallery/olenka-kotyk-15382.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width:100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     -webkit-transform: translate3d(-100%, 0, 0);
+     -moz-transform: translate3d(-100%, 0, 0);
+     -ms-transform: translate3d(-100%, 0, 0);
+     -o-transform: translate3d(-100%, 0, 0);
+     transform: translate3d(-100%, 0, 0);
+     transition: 0.7s ease-in-out;
  }
 
  @media screen and (max-width: 768px){
@@ -343,7 +358,7 @@ header{
 
  .banner h1 {
    font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+   text-transform: uppercase;
    font-size: 3em;
    color: whitesmoke;
  }
