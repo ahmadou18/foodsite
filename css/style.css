@@ -246,6 +246,22 @@ header{
    text-align: center;
    height: 40px;
    width: 50%;
+     cursor: pointer;
+     webkit-transition: 0.3s ;
+     -moz-transition: 0.3s ;
+     -ms-transition: 0.3s ;
+     -o-transition: 0.3s ;
+     transition: 0.3s;
+ }
+
+ .btn:hover{
+     -webkit-transition: 0.3s ;
+     -moz-transition: 0.3s ;
+     -ms-transition: 0.3s ;
+     -o-transition: 0.3s ;
+     transition: 0.3s;
+     background-color: #BBA17F;
+     color: whitesmoke;
  }
 
  .txt2{
@@ -350,17 +366,150 @@ header{
      transition: 0.7s ease-in-out;
  }
 
+
  @media screen and (max-width: 768px){
    .banner{
      bottom:0;
    }
  }
 
- .banner h1 {
+ .banner-child h1 {
    font-family: 'Roboto', sans-serif;
    text-transform: uppercase;
    font-size: 3em;
+   letter-spacing: 5px;
    color: whitesmoke;
  }
 
+ @media screen and (max-width:520px) {
+     .banner-child h1{
+         text-align: center;
+         font-size: 2em;
+     }
+ }
+
+ @media screen and (max-width:380px) {
+     .banner-child h1{
+         text-align: center;
+     }
+ }
+
+ .specialities{
+     width: 100%;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ @media screen and (max-width: 768px){
+     . .specialities{
+         height: 100vh;
+     }
+ }
+
+ .menus{
+     width: 80%;
+     height: 100%;
+     position: relative;
+     bottom: 20%;
+     display: flex;
+     flex-wrap: wrap;
+     background-color: whitesmoke;
+ }
+
+ @media screen and (max-width: 768px){
+     .menus{
+         width: 100%;
+         bottom: 0%;
+     }
+ }
+
+ .plate{
+     width: 50%;
+     height: 50%;
+     display: flex;
+ }
+
+ @media screen and (max-width: 768px){
+     .plate{
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+ .desc h4{
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     margin: 0;
+ }
+
+ .desc p{
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     font-size: 12px;
+     color: #ADBCD8;
+     margin: 0;
+ }
+
+ .desc span{
+     display:block;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     text-transform: uppercase;
+     font-weight: bold;
+     color: #B59874;
+ }
+
+ .desc{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ @media screen and (max-width: 768px) {
+     .row-reverse{
+         flex-direction: column;
+     }
+ }
+ .photo{
+     width: 76%;
+     height: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ @media screen and (max-width: 768px) {
+     .photo{
+         width: 100%;
+         height: 50%;
+     }
+ }
+
+ .photo1{
+     background-image: url("../gallery/photo1.jpg");
+ }
+
+ .photo2{
+     background-image: url("../gallery/photo2.jpg");
+ }
+
+ .photo3{
+     background-image: url("../gallery/photo3.jpg");
+ }
+
+ .photo4{
+     background-image: url("../gallery/photo4.jpg");
+ }
 
