@@ -123,12 +123,27 @@ header{
   margin: 0;
 }
 
+
 .main p{
   text-transform: uppercase;
   color: whitesmoke;
   font-size: 3em;
   font-family: 'Roboto', sans-serif;
 }
+
+ @media all and (max-width:480px) {
+   .main h1{
+     font-size: 5em;
+     text-align: center;
+   }
+ }
+
+ @media all and (max-width:480px) {
+   .main p{
+     font-size: 2em;
+     text-align: center;
+   }
+ }
 
 
 
@@ -146,6 +161,8 @@ header{
  @media all and (max-width: 768px){
    .container{
      height: 100vh;
+     display: flex;
+
    }
  }
 
@@ -160,12 +177,18 @@ header{
    z-index: 1;
  }
 
+
  @media all and (max-width: 768px){
-   .container{
+   .reservation{
+     bottom: 0%;
+     width: 100%;
      display: flex;
-     flex-direction: column !important;
+    flex-direction: column-reverse;
    }
+
+
  }
+
 
 
  .txt{
@@ -176,6 +199,12 @@ header{
    flex-direction: column;
    justify-content: center;
    align-items: center;
+ }
+
+ @media all and (max-width: 768px){
+   .txt{
+     width: 100%;
+   }
  }
 
  .txt h3{
@@ -202,6 +231,12 @@ header{
    background-size: cover;
  }
 
+ @media screen and (max-width: 768px){
+   .image{
+     width: 100%;
+   }
+ }
+
  .btn{
    background-color: transparent;
    border: 2px solid #EDE4DA;
@@ -222,10 +257,27 @@ header{
 
  }
 
+ @media screen and (max-width: 768px){
+   .txt2{
+     width: 100%;
+     height: 50%;
+   }
+ }
+
+
+
+
  .txt2 p{
    text-align: center;
    font-family: 'Roboto', cursive;
    color: #ADADAD;
+ }
+
+ @media screen and (max-width: 768px){
+   .txt2 p{
+     font-size: 13px;
+     margin: 0;
+   }
  }
 
  .txt2 h3{
@@ -237,12 +289,35 @@ header{
    font-weight: lighter;
  }
 
+ @media screen and (max-width: 768px){
+   .txt2 h3{
+     margin: 0;
+     font-size: 18px;
+   }
+ }
+
  .image2{
    width: 31%;
    height: 100%;
    margin: 0;
    background-image: url("../gallery/alex-holyoake-139326.jpg");
    background-size: cover;
+ }
+
+
+ @media all and (max-width: 768px){
+   .image2{
+     width: 100%;
+     height: 50%;
+   }
+ }
+
+
+ @media all and (max-width: 768px){
+   .reverse{
+    display: flex;
+     flex-direction: column;
+   }
  }
 
  /*banniere*/
@@ -258,6 +333,12 @@ header{
    background-position: center;
    position: relative;
    bottom: 10%;
+ }
+
+ @media screen and (max-width: 768px){
+   .banner{
+     bottom:0;
+   }
  }
 
  .banner h1 {
